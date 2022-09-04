@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed News</title>
+    <style>
+#navbar{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      border: 1px solid black;
+      background-color: blue;
+      
+    }
+    #navbar>a{
+      color: white;
+      
+    }
+/* sidebar */
+    #main{
+        display: flex;
+      }
+      #main>#sidebar{
+        width: 30%;
+        border: 1px solid black;
+      }
+      #main>#detailed_news{
+        width: 70%;
+      }
+      #main>#sidebar>img{
+        width: 100%;
+      }
+      #detailed_news>div{
+        border: 1px solid black;
+        width: 40%;
+        height: 400px;
+        margin: auto;
+      }
+      #detailed_news>div>img{
+        width: 100%;
+        height: 250px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div>
+      <!-- - The nav-bar will have link for home page(Id:- "home") and link for world news(Id:- "world_news). -->
+    </div>
+    <div>
+      <div id="navbar">
+        <!-- Sidebar will have
+        - Image of user (Id:- "user_img")
+        - Name of user (Id:- "user_name")
+        - Email of user (Id:- "user_email")
+        - Country of user (Id:- "user_country) -->
+        <a href="index.html" id="home">Home</a>
+        <a href="worldNews.html" id="world_news">world_news</a>
+      </div>
+      <div id="main">
+        <div id="sidebar">
+          <!-- Sidebar will have
+             - Image of user (Id:- "user_img")
+             - Name of user (Id:- "user_name")
+            - Email of user (Id:- "user_email")
+             - Country of user (Id:- "user_country) -->
+            
+        </div>
+        <div id="detailed_news">
+          <!-- - The detailed news will be appended inside div with Id as "detailed_news", which will have following:-
+        * Image tag for image
+        * H3 tag for title
+        * H4 tag for description -->
+        </div>
+        </div>
+      
+    </div>
+  </body>
+</html>
+<script src="./scripts/news.js" type="module"></script>

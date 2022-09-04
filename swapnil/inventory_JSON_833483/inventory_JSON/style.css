@@ -1,0 +1,16 @@
+/* Give styling here  */
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,350px);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+  }
+  #container>div{
+    border: 1px solid black;
+  }
+  #container>div>img{
+    width: 100%;
+    height: 250px;
+  }

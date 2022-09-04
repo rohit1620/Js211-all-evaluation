@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World News</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: blue;
+      }
+      
+      #news_result{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto,300px);
+        gap: 20px;
+      }
+      #news_result>div{
+        border: 1px solid black;
+      }
+      #news_result>div>img{
+        width: 100%;
+        height: 250px;
+      }
+   /* sidebar */
+      #main{
+        display: flex;
+      }
+      #main>#sidebar{
+        width: 30%;
+        border: 1px solid black;
+      }
+      #main>#news_result{
+        width: 70%;
+      }
+      #main>#sidebar>img{
+        width: 100%;
+      }
+      /* sidebar */
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <!-- - The nav-bar will have following :- 
+     * search box with Id as- "search_box"
+     * Link for different country news with IDs as:-
+       - India :- “in”
+       - Usa :- “us”
+       - China :- “ch”
+       - UK :- “uk”
+       - New Zealand :- “nz” -->
+        <input type="search" name="" id="search_box" >
+        
+          <button id="in" value="in">India</button>
+          <button id="ch" value="ch">China</button>
+          <button id="nz" value="nz">Newzeland</button>
+          <button id="us" value="us">USA</button>
+          <button id="uk" value="uk">UK</button>
+        
+    </div>
+    <div id="main">
+    <div id="sidebar">
+      <!-- Sidebar will have
+         - Image of user (Id:- "user_img")
+         - Name of user (Id:- "user_name")
+        - Email of user (Id:- "user_email")
+         - Country of user (Id:- "user_country) -->
+         
+    </div>
+    <div id="news_result">
+      <!-- - All the news will be appended inside div with id as "news_result".
+      - Every news card will have class as "news" (Show image, title and author only in cards). -->
+    </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/worldNews.js" type="module"></script>

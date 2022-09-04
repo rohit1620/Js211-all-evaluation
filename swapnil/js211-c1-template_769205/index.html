@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: blue;
+        gap: 20px;
+        padding-right: 20px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+     #navbar>a{
+      color: white;
+      text-decoration: none;
+     }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar id:- "navbar"
+link to home page and store page ids:- "home" and "store" respectively.
+Input fields id:- 
+- Brand name :- "mobile_brand"
+- Product name :- "mobile_name"
+- price :- "mobile_price"
+- image url :- "mobile_image"
+
+Submit button Id:- "submit" -->
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="store.html">Store</a>
+</div>
+<form action="">
+  <input type="text" name="" id="mobile_brand" placeholder="Enter Brand">
+  <input type="text" name="" id="mobile_name" placeholder="Enter Name">
+  <input type="number" name="" id="mobile_price" placeholder="Enter Price">
+  <input type="text" name="" id="mobile_image" placeholder="Image URL">
+  <button id="submit">submit</button>
+</form>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
